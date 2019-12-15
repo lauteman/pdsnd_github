@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+Created 12/15/19 README file.
 
 ### Project Title
-Replace the Project Title
+Bikeshare project.  This project as represented by the third Udacity project:  Using git and GitHub.
 
 ### Description
-Describe what your project is about and what it does
+This project allows the user to input several parameters to analyze bike ride sharing information across three locations.  The user can choose between Chicago, New York, and Washington DC.  The user can input time frequency as well.  
 
 ### Files used
-Include the files used
+Bikeshare3_112519.py
+chicago.csv (not included in github)
+new_york_city.csv (not included in github)
+washington.csv (not included in github)
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity courseware plus several examples posted on web to break through sticking points "ie show examples"  
