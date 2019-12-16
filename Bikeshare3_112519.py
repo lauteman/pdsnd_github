@@ -156,7 +156,7 @@ def user_stats(df,city):
 def display_lines(df):
     """Displays five lines of data based on user input."""
     input_lines = input("Do you want to see the raw data?: yes or no ")
-    if input_lines == "yes":
+    if input_lines == "yes" or input_lines == 'y':
         start_line = 0
         end_line = 5
         while end_line <= df.shape[0]-1:
@@ -164,7 +164,7 @@ def display_lines(df):
             start_line += 5
             end_line +=5
             input_lines_two = input("Do you want another five lines of data?: yes or no     ")
-            if input_lines_two == 'no':
+            if input_lines_two == 'no' or input_lines_two == 'n':
                 break
 
 
@@ -180,7 +180,7 @@ def main():
         display_lines(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if (restart.lower() != 'yes' or restart.lower() != 'y'):
+        if restart.lower() == 'no' or restart.lower() == 'n' :
             break
 
 
