@@ -2,7 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'newcsvfiles/chicago.csv',
+CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
@@ -19,17 +19,17 @@ def get_filters():
 
 
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = input("Which city would you like to review, type:  chicago, new york or washington").title()
+    city = input("Which city would you like to review, type:  chicago, new york or washington     ").title()
     while city not in ['Chicago', 'New York', 'Washington']:
-        city = input("Try Again...which city would you like to review, type:  chicago, new york or washington").title()
+        city = input("Try Again...which city would you like to review, type:  chicago, new york or washington     ").title()
     # get user input for month (all, january, february, ... , june)
-    month = input("What months would you like to analyze: all, january, february, march, april, may, or june").title()
+    month = input("What months would you like to analyze: all, january, february, march, april, may, or june     ").title()
     while month not in ['All', 'January', 'February','March','April','May','June']:
-        month = input("Try Again...What months would you like to analyze: all, january, february, march, april, may, or june").title()
+        month = input("Try Again...What months would you like to analyze: all, january, february, march, april, may, or june     ").title()
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    day = input("What day would you like to analyze:  all, monday, tuesday, wednesday, thursday, friday, saturday, or sunday").title()
+    day = input("What day would you like to analyze:  all, monday, tuesday, wednesday, thursday, friday, saturday, or sunday     ").title()
     while day not in ['All', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
-        day = input("Try again....What day would you like to analyze:  all, monday, tuesday, wednesday, thursday, friday, saturday, or sunday").title()
+        day = input("Try again....What day would you like to analyze:  all, monday, tuesday, wednesday, thursday, friday, saturday, or sunday     ").title()
 
     print('-'*40)
     return city, month, day
@@ -163,7 +163,7 @@ def display_lines(df):
             print(df.iloc[start_line:end_line,:])
             start_line += 5
             end_line +=5
-            input_lines_two = input("Do you want another five lines of data?: yes or no ")
+            input_lines_two = input("Do you want another five lines of data?: yes or no     ")
             if input_lines_two == 'no':
                 break
 
